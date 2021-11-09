@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: writing-deployment
+  labels:
+    app: writing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: writing
+  template:
+    metadata:
+      labels:
+        app: writing
+    spec:
+      containers:
+      - name: writing
+        image: quay.io/ernesgonzalez33/writing:latest
