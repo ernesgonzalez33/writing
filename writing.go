@@ -1,3 +1,5 @@
+// App based on: https://gobyexample.com/writing-files
+
 package main
 
 import (
